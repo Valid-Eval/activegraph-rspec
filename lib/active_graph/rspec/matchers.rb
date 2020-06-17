@@ -3,7 +3,7 @@ require 'neo4j/rspec/matchers/properties'
 require 'neo4j/rspec/matchers/relations'
 require 'neo4j/rspec/compat'
 
-module Neo4j
+module ActiveGraph
   module RSpec
     module Matchers
       include HasN

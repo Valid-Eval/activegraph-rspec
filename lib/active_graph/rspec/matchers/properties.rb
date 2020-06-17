@@ -1,6 +1,6 @@
 require 'rspec/expectations'
 
-module Neo4j
+module ActiveGraph
   module RSpec
     module Matchers
       module Properties
@@ -32,7 +32,7 @@ module Neo4j
           match do |model|
             name = name.to_s
 
-            expected_type = Neo4j::Shared.const_get(type.to_s) if type
+            expected_type = ActiveGraph::Shared.const_get(type.to_s) if type
             model.class.attributes.key?(name) && model.class.attributes[name].type == expected_type
           end
 
@@ -51,8 +51,7 @@ module Neo4j
 
           match do |model|
             klass = model.class
-            klass.attributes.key?(name.to_s) &&
-              Neo4j::RSpec::Compat.current.property_constraint?(klass.attributes[name.to_s], type)
+            klass.attributes.key?(name.to_s) && klass.attributes[name.to_s].constraint?(type)
           end
 
           failure_message do |model|

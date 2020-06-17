@@ -1,4 +1,4 @@
-# Neo4j::Rspec [![Build Status](https://travis-ci.org/sineed/neo4j-rspec.svg?branch=master)](https://travis-ci.org/sineed/neo4j-rspec)
+# ActiveGraph::Rspec
 
 This gem contains of several testing one-liners for [neo4j](https://github.com/neo4jrb/neo4j) gem.
 
@@ -18,7 +18,7 @@ Then configure it in your `spec_helper` (or `rails_helper`):
 
 ```ruby
 RSpec.configure do |config|
-  config.include Neo4j::RSpec::Matchers
+  config.include ActiveGraph::RSpec::Matchers
   # ... other configuration ...
 end
 ```
@@ -32,7 +32,7 @@ end
         it { is_expected.to define_property :general }
         it { is_expected.to define_property :string, :String }
         it { is_expected.to define_property :boolean, :Boolean }
-        it { is_expected.to define_property :boolean, :'Neo4j::Shared::Boolean' }
+        it { is_expected.to define_property :boolean, :'ActiveGraph::Shared::Boolean' }
 - Relationships
 
         it { is_expected.to have_many(:comments) }
@@ -42,10 +42,6 @@ end
 - Constraints
 
         it { is_expected.to define_constraint :name, :unique }
-- Indexes
-
-        # DEPRECATED!  Newer version of the `neo4j` gem no longer support defining indexes on the model
-        it { is_expected.to define_index(:index_name) }
 - Tracking
 
         it { is_expected.to track_creations } # `created_at`

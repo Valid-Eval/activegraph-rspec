@@ -1,5 +1,5 @@
 class Wrote
-  include Neo4j::ActiveRel
+  include ActiveGraph::ActiveRel
 
   from_class :Person
   to_class :any

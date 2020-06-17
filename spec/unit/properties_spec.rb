@@ -6,7 +6,7 @@ RSpec.describe 'Property matchers' do
       it { is_expected.to define_property(:title) }
       it { is_expected.to define_property(:description, :String) }
       it { is_expected.to define_property(:published, :Boolean) }
-      it { is_expected.to define_property(:published, :'Neo4j::Shared::Boolean') }
+      it { is_expected.to define_property(:published, :'ActiveGraph::Shared::Boolean') }
 
       it { is_expected.not_to define_property(:non_existant, :Boolean) }
     end

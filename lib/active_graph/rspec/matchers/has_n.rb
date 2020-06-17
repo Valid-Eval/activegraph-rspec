@@ -1,4 +1,4 @@
-module Neo4j
+module ActiveGraph
   module RSpec
     module Matchers
       module HasN

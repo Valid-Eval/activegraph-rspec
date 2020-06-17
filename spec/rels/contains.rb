@@ -1,5 +1,5 @@
 class Contains
-  include Neo4j::ActiveRel
+  include ActiveGraph::ActiveRel
 
   from_class :Post
   to_class :Comment
