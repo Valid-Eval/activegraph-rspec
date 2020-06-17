@@ -5,8 +5,8 @@ require 'active_graph/rspec/version'
 Gem::Specification.new do |spec|
   spec.name          = 'activegraph-rspec'
   spec.version       = ActiveGraph::RSpec::VERSION
-  # spec.authors       = ['Denis Tataurov']
-  # spec.email         = ['sineedus@mail.ru']
+  spec.authors       = ['Denis Tataurov', 'System Engineering Team']
+  spec.email         = ['hb@syseng.dk']
 
   spec.summary       = 'RSpec matchers for ActiveGraph'
   spec.description   = 'RSpec matchers for ActiveGraph'

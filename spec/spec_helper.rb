@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
-require 'neo4j/rspec'
-require 'neo4j'
+require 'active_graph/rspec'
+require 'activegraph'
 require 'pry' unless ENV['TRAVISCI']
 
 Dir[File.join(File.dirname(__FILE__), 'nodes', '*.rb')].each { |file| require file }

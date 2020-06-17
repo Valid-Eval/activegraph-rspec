@@ -1,6 +1,6 @@
 require 'rake'
 require 'bundler/gem_tasks'
-require 'neo4j-core'
+# require 'neo4j-core'
 require 'rspec/core/rake_task'
 
 task default: :spec

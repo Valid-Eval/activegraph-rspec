@@ -1,17 +1,17 @@
 # ActiveGraph::Rspec
 
-This gem contains of several testing one-liners for [neo4j](https://github.com/neo4jrb/neo4j) gem.
+This gem contains of several testing one-liners for [activegraph](https://github.com/neo4jrb/activegraph) gem.
 
 ## Install
 
 Add line into your Gemfile:
 ```ruby
-gem "neo4j-rspec"
+gem "activegraph-rspec"
 ```
 or install it directly
 
 ```
-gem install neo4j-rspec
+gem install activegraph-rspec
 ```
 
 Then configure it in your `spec_helper` (or `rails_helper`):
@@ -67,4 +67,4 @@ end
 
 ## Need yet another matcher?
 
-Welcome! Feel free to post an [issue](https://github.com/sineed/neo4j-rspec/issues/new). Contributions are welcome too.
+Welcome! Feel free to post an [issue](https://github.com/systems-engineering/activegraph-rspec/issues/new). Contributions are welcome too.

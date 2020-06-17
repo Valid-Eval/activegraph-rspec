@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'neo4j', ENV['NEO4J_GEM_VERSION']
+gem 'activegraph', ENV['ACTIVEGRAPH_GEM_VERSION']
 
 gem 'pry'
 gem 'rake', '~> 12.3.1'

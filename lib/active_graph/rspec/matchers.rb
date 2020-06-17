@@ -1,7 +1,6 @@
-require 'neo4j/rspec/matchers/has_n'
-require 'neo4j/rspec/matchers/properties'
-require 'neo4j/rspec/matchers/relations'
-require 'neo4j/rspec/compat'
+require 'active_graph/rspec/matchers/has_n'
+require 'active_graph/rspec/matchers/properties'
+require 'active_graph/rspec/matchers/relations'
 
 module ActiveGraph
   module RSpec
