@@ -1,6 +1,7 @@
 # ActiveGraph::Rspec
 
 This gem contains of several testing one-liners for [activegraph](https://github.com/neo4jrb/activegraph) gem.
+It's a fork of [neo4j-rspec](https://github.com/sineed/neo4j-rspec) gem.
 
 ## Install
 
