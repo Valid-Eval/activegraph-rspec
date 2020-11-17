@@ -1,7 +1,7 @@
 # ActiveGraph::Rspec
 
 This gem contains of several testing one-liners for [activegraph](https://github.com/neo4jrb/activegraph) gem.
-It's a fork of [neo4j-rspec](https://github.com/sineed/neo4j-rspec) gem.
+It's a fork of [activegraph-rspec](https://github.com/systems-engineering/activegraph-rspec) which is itself a fork of[neo4j-rspec](https://github.com/sineed/neo4j-rspec) gem, which we (Valid Eval) used prior to updating from ActiveNode to ActiveGraph.
 
 ## Install
 
@@ -65,7 +65,3 @@ end
         it { is_expected.to use_create_unique(:all) }
         it { is_expected.to use_create_unique(on: [:key1, :key2]) }
 
-
-## Need yet another matcher?
-
-Welcome! Feel free to post an [issue](https://github.com/systems-engineering/activegraph-rspec/issues/new). Contributions are welcome too.
